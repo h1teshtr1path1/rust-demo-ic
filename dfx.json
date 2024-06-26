@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "rust-demo-ic-backend": {
+      "candid": "src/rust-demo-ic-backend/rust-demo-ic-backend.did",
+      "package": "rust-demo-ic-backend",
+      "type": "rust"
+    },
+    "rust-demo-ic-frontend": {
+      "dependencies": [
+        "rust-demo-ic-backend"
+      ],
+      "source": [
+        "src/rust-demo-ic-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "rust-demo-ic-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
