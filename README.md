@@ -1,2 +1,2 @@
 # rust-demo-ic
-Demo project for Rust in ICP
+Demo project - Rust in ICP
